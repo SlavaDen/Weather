@@ -1,0 +1,23 @@
+
+$primary-blue-400-light: #3661ec;
+
+$yellow-300-light: #ffb609;
+
+//FONTS
+$bold-font: "SF-Bold, sant-serif";
+$medium-font: "SF-Medium, sant-serif";
+$regular-font: "SF-Regular, sant-serif";
+$light-font: "SF-Light, sant-serif";
+
+:root{
+  --primary-blue-400-light: #{$primary-blue-400-light};
+  --primary-blue-400-default: var(#{--primary-blue-400-light});
+
+  --yellow-300-light: #{$yellow-300-light};
+  --yellow-300-default: var(#{--yellow-300-light});
+
+  --bold-font: #{$bold-font};
+  --medium-font: #{$medium-font};
+  --regular-font: #{$regular-font};
+  --light-font: #{$light-font};
+}

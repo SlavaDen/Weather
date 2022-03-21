@@ -1,0 +1,16 @@
+.grid {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+		"header header header"
+		"main main main"
+		"footer footer footer";
+  padding: 25px 65px 25px 65px;
+}
+
+aside {
+	grid-area: aside;
+}
+main {
+	grid-area: main;
+}

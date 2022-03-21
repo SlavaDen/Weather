@@ -1,0 +1,16 @@
+header{
+  grid-area: header;
+}
+.header_tools{
+  flex-grow: 1;
+}
+.lotoype_icon{
+  height: 52px;
+  width: 52px;
+  color: var(#{--primary-blue-400-default});
+}
+.lotoype_text{
+  font-size: 30px;
+  color: var(#{--primary-blue-400-default});
+  font-family: var(#{--bold-font});
+}

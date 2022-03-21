@@ -1,0 +1,7 @@
+@use "globals";
+@use "fonts";
+
+body{
+  font-family: var(#{--regular-font});
+  background-color: #f7f7f7;
+}
