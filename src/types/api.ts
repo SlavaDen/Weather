@@ -1,6 +1,6 @@
 
 export type TApi = {
-  getWeatherByCity: Function
+  getWeather: Function,
 }
 
 export type TApiError = {

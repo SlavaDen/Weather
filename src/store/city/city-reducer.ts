@@ -3,7 +3,12 @@ import { CITY_REDUX_TYPES } from 'enums/city';
 import { ICityState, TCityAction } from 'types/city';
 
 const initialState: ICityState = {
-  currentCity: "Tokyo",
+  currentCity: {
+    "id": 1,
+    "title": "Tokyo",
+    "lat": 35.6828387,
+    "lon": 139.7594549
+  },
 }
 
 const cityReducer = (state = initialState, action: TCityAction) =>{

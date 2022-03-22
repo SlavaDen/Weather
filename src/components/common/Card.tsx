@@ -8,7 +8,7 @@ const Card: React.FC<ICard> = ({ children, ...props }) => {
 
   const style = {
     backgroundColor: "white",
-    border: "1px solid #d1d1d1",
+    boxShadow: "1px 1px 1px #d1d1d1",
     borderRadius: 10
   };
 

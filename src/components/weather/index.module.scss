@@ -1,5 +1,55 @@
-.weatherIcon_clear{
-  color: var(#{--yellow-300-default});
-  height: 100px;
-  width: 100px;
+
+.weatherDaily_card{
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.weatherDaily_days{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+
+.weatherDay_card{
+  background-color: var(#{--primary-blue-transparent-default}) !important;
+  box-shadow: none !important;
+}
+
+.weatherDay_date{
+  margin-top: 2px !important;
+}
+
+.weatherTodayInfo_icon{
+  height: 70;
+  width: 70;
+}
+
+@media (max-width: 1347px) {
+  .weatherDaily_days{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .weatherDaily_days{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1026px) {
+  .weatherDaily_days{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .weatherDaily_days{
+    grid-template-columns: repeat(1, 3fr);
+  }
+}
+
+@media (max-width: 766px) {
+  .weatherDaily_days{
+    grid-template-columns: repeat(1, 3fr);
+  }
 }

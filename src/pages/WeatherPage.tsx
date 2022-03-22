@@ -2,9 +2,10 @@ import WeatherToday from "components/weather/WeatherToday";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCurrentCity } from "store/city/city-selectors";
-import { loadWeatherToday } from "store/weather/weather-actions";
+import { getWeather } from "store/weather/weather-actions";
 import s from "./index.module.scss";
-import WeatherTodayInfo from './../components/weather/WeatherTodayInfo';
+import WeatherTodayInfo from 'components/weather/WeatherTodayInfo';
+import WeatherDaily from 'components/weather/WeatherDaily';
 
 const WeatherPage = () => {
 
@@ -13,14 +14,19 @@ const WeatherPage = () => {
   const currentCity = useSelector(selectCurrentCity);
 
   useEffect(() => {
-    dispath(loadWeatherToday(currentCity));
+    dispath(getWeather(currentCity.lat, currentCity.lon));
   }, [currentCity])
 
   return (
-    <div className={s.grid}>
-      <WeatherToday />
-      <WeatherTodayInfo />
-    </div>
+    <>
+      <div className={s.weatherToday}>
+        <WeatherToday />
+        <WeatherTodayInfo />
+      </div>
+      <div className={s.weatherDaily}>
+        <WeatherDaily />
+      </div>
+    </>
   )
 }
 

@@ -1,9 +1,9 @@
 import { instance } from "./"
 
-const getWeatherByCity = async (city: string) =>{
-  const response = await instance.get(`weather?q=${city}&appid=${process.env.API_KEY}`);
+const getWeather = async (lat: number, lon: number) =>{
+  const response = await instance.get(`onecall?lat=${lat}&lon=${lon}&units=metric&appid=${process.env.API_KEY}`);
 
   return (response);
 }
 
-export {getWeatherByCity};
+export {getWeather};

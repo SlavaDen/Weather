@@ -1,42 +1,62 @@
 [
   {
     "id": 1,
-    "title": "Tokyo"
+    "title": "Tokyo",
+    "lat": 35.6828387,
+    "lon": 139.7594549
   },
   {
     "id": 2,
-    "title": "Delhi"
+    "title": "Delhi",
+    "lat": 28.6517178,
+    "lon": 77.2219388
   },
   {
     "id": 3,
-    "title": "Shanghai"
+    "title": "Shanghai",
+    "lat": 31.2322758,
+    "lon": 121.4692071
   },
   {
     "id": 4,
-    "title": "Mexico"
+    "title": "Mexico",
+    "lat": 19.4326296,
+    "lon": -99.1331785
   },
   {
     "id": 5,
-    "title": "Cairo"
+    "title": "Cairo",
+    "lat": 30.0443879,
+    "lon": 31.2357257
   },
   {
     "id": 6,
-    "title": "Mumbai"
+    "title": "Mumbai",
+    "lat": 19.0759899,
+    "lon": 72.8773928
   },
   {
     "id": 7,
-    "title": "Beijing"
+    "title": "Beijing",
+    "lat": 39.906217,
+    "lon": 116.3912757
   },
   {
     "id": 8,
-    "title": "Dhaka"
+    "title": "Dhaka",
+    "lat": 23.7861979,
+    "lon": 90.4026151
   },
   {
     "id": 9,
-    "title": "Osaka"
+    "title": "Osaka",
+    "lat": 34.6937569,
+    "lon": 135.5014539
   },
   {
     "id": 10,
-    "title": "New York"
+    "title": "New York",
+    "lat": 40.7127281,
+    "lon": -74.0060152
   }
 ]

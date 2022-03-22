@@ -9,18 +9,23 @@ const SelectCountry: React.FC = () => {
   const dispatch = useDispatch();
   const currentCity = useSelector(selectCurrentCity);
 
-  const handleChangeCurrentCity = (city: string) => {
-    dispatch(setCurrentCity(city));
+  const handleChangeCurrentCity = (cityId: string) => {
+
+    const newCity = cities.find((currentCity) => currentCity.id === parseInt(cityId)) || cities[0];
+
+    console.log(newCity)
+    dispatch(setCurrentCity(newCity));
   }
 
   return (
     <select
-      value={currentCity}
+      value={currentCity.id}
       onChange={(event) => handleChangeCurrentCity(event.target.value)}
+      className={s.selectCountry}
     >
       {
         cities.map((city) => (
-          <option key={city.id}>{city.title}</option>
+          <option key={city.id} value={city.id}>{city.title}</option>
         ))
       }
     </select>

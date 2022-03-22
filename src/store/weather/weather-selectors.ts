@@ -1,5 +1,11 @@
 import { TState } from "types/redux";
 
-const selectWeatherToday = (state: TState) => state.weather.today;
+const selectToday = (state: TState) => state.weather.today;
 
-export {selectWeatherToday};
+const selectDaily = (state: TState) => state.weather.daily;
+
+const selectLoading = (state: TState) => {
+  return state.weather.loading
+};
+
+export {selectToday, selectDaily, selectLoading};

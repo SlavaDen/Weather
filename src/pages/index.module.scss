@@ -1,4 +1,46 @@
-.grid { 
+.weatherToday{ 
   display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 5fr;
+  gap: 20px;
+}
+.weatherDaily{ 
+  display: grid;
+	grid-template-columns: 3fr;
+  margin-top: 20px;
+}
+
+@media (max-width: 1347px) {
+  .weatherToday{
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .weatherToday{
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media (max-width: 1026px) {
+  .weatherToday{
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media (max-width: 950px) {
+  .weatherToday{
+    grid-template-columns: 3fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .weatherToday{
+    grid-template-columns: 3fr;
+  }
+}
+
+@media (max-width: 766px) {
+  .weatherToday{
+    grid-template-columns: 3fr;
+  }
 }

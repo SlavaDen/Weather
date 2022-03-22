@@ -6,4 +6,4 @@ const instance = axios.create({
 })
 
 export {instance}
-export {getWeatherByCity} from "./weather";
+export {getWeather} from "./weather";

@@ -2,7 +2,7 @@ header{
   grid-area: header;
 }
 .header_tools{
-  flex-grow: 1;
+  text-align: right;
 }
 .lotoype_icon{
   height: 52px;
@@ -13,4 +13,11 @@ header{
   font-size: 30px;
   color: var(#{--primary-blue-400-default});
   font-family: var(#{--bold-font});
+}
+
+.selectCountry{
+  border-radius: 5px;
+  padding: 6px;
+  font-size: 20px;
+  border-color: var(#{--gray-400-default});
 }
