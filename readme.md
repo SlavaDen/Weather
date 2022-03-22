@@ -1,5 +1,7 @@
 # Weather
 
+Demo (https://weather-inky.vercel.app)
+
 Stasus: Finished
 
 Frontend application for viewing the weather in the selected city for 7 days
