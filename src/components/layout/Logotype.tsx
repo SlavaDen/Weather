@@ -1,11 +1,11 @@
 import s from "./index.module.scss";
-import { TiWeatherCloudy } from "react-icons/ti";
+import logotype from "assets/icons/clear.svg"
 import { Stack } from "../common";
 
 const Logotype = () => {
   return (
     <Stack>
-      <TiWeatherCloudy className={s.lotoype_icon} />
+      <img src={logotype} className={s.lotoype_icon} />
       <p className={s.lotoype_text}>Weather</p>
     </Stack>
   )
