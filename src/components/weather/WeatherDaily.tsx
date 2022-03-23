@@ -12,7 +12,7 @@ const WeatherDaily = () => {
   const loading = useSelector(selectLoading);
 
   if (loading === LOADING.pending) {
-    return <Skeleton>123131313</Skeleton>
+    return <Skeleton />
   }
 
   return (

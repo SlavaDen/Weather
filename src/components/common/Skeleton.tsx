@@ -1,7 +1,7 @@
 import s from "./index.module.scss";
 
 interface ISkeleton {
-  children: React.ReactNode
+  children?: React.ReactNode
   className?: string;
 }
 

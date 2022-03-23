@@ -32,8 +32,8 @@ npm install
 2. Register and get an api key
    https://api.openweathermap.org
 
-3. Open File config.json at the root of the project
-   Insert api key
+3. Create File config.json at the root of the project
+   Fill in the file according to the template below, specifying your api key
 
 ```
 {
