@@ -29,7 +29,19 @@ Using a minimum number of dependencies and webpack builder.
 npm install
 ```
 
-2. Start the frontend application locally
+2. Register and get an api key
+   https://api.openweathermap.org
+
+3. Open File config.json at the root of the project
+   Insert api key
+
+```
+{
+"API_KEY": "Enter api key"
+}
+```
+
+4. Start the frontend application locally
 
 ```bash
 npm start
